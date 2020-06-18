@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: nginx-svc
   labels:
-    app: nginx
+    env: dev
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app: nginx
+    env: dev
